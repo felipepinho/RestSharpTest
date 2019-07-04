@@ -66,7 +66,11 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Clima.cs" />
+    <Compile Include="CepTest.cs" />
+    <Compile Include="MassadeDadosHelper.cs" />
+    <Compile Include="TestHelper.cs" />
+    <Compile Include="ClientesTest.cs" />
+    <Compile Include="ClimaTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
