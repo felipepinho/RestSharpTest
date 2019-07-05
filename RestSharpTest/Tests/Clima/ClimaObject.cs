@@ -1,22 +1,17 @@
-﻿using System.Net;
-using System;
+﻿using FluentAssertions;
 using NUnit.Framework;
 using RestSharp;
-using RestSharp.Deserializers;
-using RestSharp.Serialization.Json;
-using FluentAssertions;
-using System.Collections.Generic;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using RestSharpTest.Helper;
+using System;
+using System.Net;
 
-namespace RestSharpTest
+namespace RestSharpTest.Tests.Clima
 {
-    [TestClass]
-    public class ClimaTest
+    class ClimaObject
     {
         MassadeDadosHelper massa = new MassadeDadosHelper();
         TestHelper helper = new TestHelper();
 
-        [TestMethod]
         public void VerificaStatus200()
         {
             try
@@ -38,7 +33,6 @@ namespace RestSharpTest
             }
         }
 
-        [TestMethod]
         public void VerificaExibicao()
         {
             //Criando e executando a response

@@ -66,11 +66,14 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CepTest.cs" />
-    <Compile Include="MassadeDadosHelper.cs" />
-    <Compile Include="TestHelper.cs" />
-    <Compile Include="ClientesTest.cs" />
-    <Compile Include="ClimaTest.cs" />
+    <Compile Include="Tests\Cep\CepObject.cs" />
+    <Compile Include="Tests\Cep\CepTest.cs" />
+    <Compile Include="Helper\MassadeDadosHelper.cs" />
+    <Compile Include="Helper\TestHelper.cs" />
+    <Compile Include="Tests\Clientes\ClientesObject.cs" />
+    <Compile Include="Tests\Clientes\ClientesTest.cs" />
+    <Compile Include="Tests\Clima\ClimaObject.cs" />
+    <Compile Include="Tests\Clima\ClimaTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

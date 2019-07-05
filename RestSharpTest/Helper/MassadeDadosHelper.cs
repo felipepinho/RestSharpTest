@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace RestSharpTest
+﻿namespace RestSharpTest.Helper
 {
     public class MassadeDadosHelper
     {

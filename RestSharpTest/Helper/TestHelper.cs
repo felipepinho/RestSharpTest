@@ -1,15 +1,10 @@
 ﻿using RestSharp;
 
-namespace RestSharpTest
+namespace RestSharpTest.Helper
 {
     public class TestHelper
     {
         MassadeDadosHelper massa = new MassadeDadosHelper();
-
-        public void MontaUrlCep()
-        {
-
-        }
 
         public IRestResponse GetCEP(string URL, string CEP)
         {

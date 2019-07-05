@@ -1,22 +1,19 @@
-﻿using System.Net;
-using System;
+﻿using FluentAssertions;
 using NUnit.Framework;
 using RestSharp;
-using RestSharp.Deserializers;
 using RestSharp.Serialization.Json;
-using FluentAssertions;
+using RestSharpTest.Helper;
+using System;
 using System.Collections.Generic;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Net;
 
-namespace RestSharpTest
+namespace RestSharpTest.Tests.Clientes
 {
-    [TestClass]
-    public class ClientesTest
+    class ClientesObject
     {
         MassadeDadosHelper massa = new MassadeDadosHelper();
         TestHelper helper = new TestHelper();
 
-        [TestMethod]
         public void VerificaStatus200()
         {
             try
@@ -26,7 +23,7 @@ namespace RestSharpTest
 
                 //Validando o status code da response
                 restResponse.StatusCode.Should().Be(200);
-                
+
                 //Validando o status code da response de outra forma
                 NUnit.Framework.Assert.That(restResponse.StatusCode, Is.EqualTo(HttpStatusCode.OK));
             }
@@ -38,7 +35,6 @@ namespace RestSharpTest
             }
         }
 
-        [TestMethod]
         public void ValidarNomeCliente()
         {
             try
